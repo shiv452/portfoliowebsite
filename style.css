@@ -1,12 +1,12 @@
 * {
-      padding: 0;
+      padding:0;
       margin: 0;
       box-sizing: border-box;
   }
   
   html {
       font-size: 10px;
-      font-family: 'Apple Chancery', cursive;
+      font-family: 'Time New Roman';
       scroll-behavior: smooth;
   }
   
@@ -19,7 +19,6 @@
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
   }
   
   img {
@@ -95,7 +94,7 @@
   #header .header {
       min-height: 8vh;
       background-color: rgba(31, 30, 30, 0.24);
-      transition: .3s ease background-color skyblue;
+      transition: .3s ease background-color rgb(161, 222, 247);
   }
   
   #header .nav-bar {
@@ -166,7 +165,7 @@
       height: 50px;
       width: 50px;
       display: inline-block;
-      border: 2px solid white;
+      border: 2.5px solid white;
       border-radius: 50%;
       position: relative;
       display: flex;
@@ -175,7 +174,7 @@
       z-index: 100;
       cursor: pointer;
       transform: scale(.8);
-      margin-right: 5px;
+      margin-right: 1px;
   }
   
   #header .hamburger:after {
@@ -184,7 +183,7 @@
       height: 100%;
       width: 100%;
       border-radius: 100%;
-      border: 3px solid blueviolet;
+      border: 3px solid red;
       animation: hamburger_puls 1s ease infinite;
   }
   
@@ -320,7 +319,7 @@
   
   #opportunity .opportunity-top {
       max-width: 500px;
-      margin: 0 auto;
+      margin: 10px auto;
   }
   
   #opportunity .opportunity-bottom {
