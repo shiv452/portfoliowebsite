@@ -213,18 +213,22 @@
             </div>
         </div>
     </section>
+
 <!--Submission Form-->
-<section class="sec">
-    <h1 class="form">Submission Form</h1>
-<br> <!--Break -->  
-      <form class="form-detail" action="POST" data-netlify="ture">  
-  <label> First Name: </label>         
-<input type="text" name="firstname" size="25"/> <br> <br>  
-<label> Middle Name: </label>     
-<input type="text" name="middlename" size="25"/> <br> <br>  
-<label> Last Name: </label>         
-<input type="text" name="lastname" size="25"/> <br> <br>  
-<label> Email ID:</label>
+<form action="POST" data-netlify="true">
+
+    <section class="sec">
+        <h1 class="form">Submission Form</h1>
+        <br> <!--Break -->  
+
+    <form class="form-detail">  
+        <label> First Name: </label>         
+        <input type="text" name="firstname" size="25"/> <br> <br>  
+        <label> Middle Name: </label>     
+        <input type="text" name="middlename" size="25"/> <br> <br>  
+        <label> Last Name: </label>         
+        <input type="text" name="lastname" size="25"/> <br> <br>  
+        <label> Email ID:</label>
 <input type="text" name="Email" size="25"><br><br>
 <label for="contact">Contact Number:</label>
 <input type="text" name="Mobile Number" size="25"><br><br>
@@ -238,24 +242,28 @@ Course :
 <option value="Gold">Gold</option>  
 <option value="Platinum">Platinum</option>  
  </select>  
-  
-<br>  
-<br>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" name="male"/> Male <br>  
-<input type="radio" name="female"/> Female <br>  
-<input type="radio" name="other"/> Other  <br>
-<br>  
-<br> 
-<br>
-<button class="btn"  type="submit">Submit</button>   
-       
+ 
+ <br>  
+ <br>  
+ <label>   
+     Gender :  
+    </label><br>  
+    <input type="radio" name="male"/> Male <br>  
+    <input type="radio" name="female"/> Female <br>  
+    <input type="radio" name="other"/> Other  <br>
+    <br>  
+    <br> 
+    <br>
+    <button class="btn"  type="submit">Submit</button>   
+    
 </form>
+<div class="from-detail">
+    <div data-netlify-recapture="true"></div>
+</div>
 
+</form>
 <!--End Code-->
-    <!-- End Footer -->
+<!-- End Footer -->
     <script src="app.js"></script>
 </body>
 
