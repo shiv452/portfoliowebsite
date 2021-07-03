@@ -689,9 +689,9 @@
   /* End Keyframes */
   
   
-  /* Media Query For Tablet */
+  /* Media Query For Mobile {This will help to convert your site into mobile size}*/
   
-  @media only screen and (min-width: 768px) {
+  @media(min-width: 768px) {
       .cta {
           font-size: 2.5rem;
           padding: 20px 60px;
@@ -789,6 +789,7 @@
           text-align: left;
           padding-left: 20px;
       }
+      
       /* End contact  */
   }
   
@@ -825,7 +826,61 @@
           margin: 1.5%;
       }
   }
+  .sec{ 
+      position: relative;
+      display: block;
+      margin-left: 90px;
+      font-size: 20px;
+      font-weight: 20px;
+      box-sizing: border-box;
+      border-radius: 1px;
+      border: 1px solid black;
+      margin-bottom: 200px;
+      margin-right: 450px;
+
+  }
+  /*Btn Styling*/
+  .form{
+      
+      color: navy;
+      font-family: 'Time New Roman',cursive;
+      font-size: 36px;
+      margin-left: 240px;
+      margin-right: 2px;
+      
+      }
+
+  .from-detail{
   
-  
+      font-size: 10px;
+      margin-left: 20px;
+    }
+    
+    .btn {
+        margin-bottom: 20px;
+        margin-left: 10px 1px;
+        padding: 8px 16px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color:skyblue;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+  .btn::hover{
+    background-color: red;
+        }
+
+  .btn:active {
+    background-color: blue;
+    box-shadow: 0 5px black;
+    transform: translateX(4px);
+}
+
 /* End  Media Query For Desktop */
   
