@@ -133,7 +133,7 @@
       font-weight: 500;
       letter-spacing: .8rem;
       text-decoration: none;
-      color: blue;
+      color: whitesmoke;
       text-transform: uppercase;
       padding: 20px;
       display: flex;
@@ -158,7 +158,7 @@
   }
   
   #header .nav-list ul li:hover a {
-      color: limegreen;
+      color: rgb(76, 212, 206);
   }
   
   #header .hamburger {
