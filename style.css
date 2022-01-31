@@ -51,7 +51,7 @@
   }
   
   .cta {
-      display: inline-block;
+      display: ruby-text;
       padding: 10px 30px;
       color: white;
       background-color: transparent;
@@ -92,9 +92,9 @@
   }
   
   #header .header {
-      min-height: 8vh;
+      min-height: 10vh;
       background-color: rgba(31, 30, 30, 0.24);
-      transition: .3s ease background-color rgb(161, 222, 247);
+      transition: 0.3s ease background-color rgb(161, 222, 247);
   }
   
   #header .nav-bar {
@@ -228,13 +228,20 @@
   
   
   /* Hero Section */
+  #vid {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-left: -170px;
+    opacity: 0.4;
+  }
   
-  #hero {
-      background-image: url(5.jpg);
+  #hero #vid{
+     /* background: url(eye.jpeg);*/
+      position: absolute;
       background-size: cover;
-      background-position: top center;
-      position: relative;
-      z-index: 1;
+      background-position: center;
+      z-index: 0.5;
   }
   
   #hero::after {
@@ -244,7 +251,7 @@
       top: 0;
       height: 100%;
       width: 100%;
-      background-color: black;
+      background-color:black;
       opacity: .9;
       z-index: -1;
   }
@@ -257,6 +264,7 @@
   }
   
   #hero h1 {
+      margin: 80px;
       display: block;
       width: fit-content;
       font-size: 4rem;
@@ -547,9 +555,12 @@
   /* contact Section */
   
   #contact .contact {
+      position: absolute;
+      margin: 20px;
+      left: 100px;
+      bottom: -5800px;
       flex-direction: column;
       max-width: 1200px;
-      margin: 0 auto;
   }
   
   #contact .contact-items {
@@ -826,38 +837,49 @@
           margin: 1.5%;
       }
   }
+
+  /* End  Media Query For Desktop */
+
+
+  /*Submission Form styling*/
   .sec{ 
       position: relative;
-      display: block;
-      margin-left: 90px;
+      text-align: center;
+      margin: 60px;
+      bottom: -10px;
+      left: 200px;
+      margin-top: -10px;
       font-size: 20px;
       font-weight: 20px;
       box-sizing: border-box;
-      border-radius: 1px;
-      border: 1px solid black;
-      margin-bottom: 200px;
+      border-radius: 2px;
+      border: 1px solid red;
+      border: dotted;
+      margin-bottom: 400px;
       margin-right: 450px;
+     
+ }
 
-  }
   /*Btn Styling*/
   .form{
-      
+      position: relative;
+      font-family: 'Palatino',cursive;
+      text-align: center;
       color: navy;
-      font-family: 'Time New Roman',cursive;
-      font-size: 36px;
-      margin-left: 240px;
-      margin-right: 2px;
-      
+      font-size: 30px;
+
       }
       
   .from-detail{
   
-      font-size: 10px;
+      font-size: 20px;
       margin-left: 20px;
     }
     
     .btn {
         margin-bottom: 20px;
+        align-items: center;
+        justify-items: center;
         margin-left: 10px 1px;
         padding: 8px 16px;
         text-align: center;
@@ -882,5 +904,4 @@
     transform: translateX(4px);
 }
 
-/* End  Media Query For Desktop */
   
