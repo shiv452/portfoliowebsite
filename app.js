@@ -1,25 +1,29 @@
-const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
-const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
-const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
-const header = document.querySelector('.header.container');
+// Get the necessary elements from the DOM
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.nav-list ul');
+const menuItems = document.querySelectorAll('.nav-list ul li a');
+const header = document.querySelector('.header');
 
+// Toggle mobile menu when hamburger is clicked
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+hamburger.classList.toggle('active');
+mobileMenu.classList.toggle('active');
 });
 
+// Change header background color on scroll
 document.addEventListener('scroll', () => {
-    var scroll_position = window.scrollY;
-    if (scroll_position > 250) {
-        header.style.backgroundColor = '#29323c';
-    } else {
-        header.style.backgroundColor = 'transparent';
-    }
+const scrollPosition = window.scrollY;
+if (scrollPosition > 250) {
+header.style.backgroundColor = '#29323c';
+} else {
+header.style.backgroundColor = 'transparent' ;
+}
 });
 
-menu_item.forEach((item) => {
-    item.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
-    });
+// Toggle mobile menu when a menu item is clicked
+menuItems.forEach((item) => {
+item.addEventListener('click', () => {
+hamburger.classList.toggle('active');
+mobileMenu.classList.toggle('active');
+});
 });
